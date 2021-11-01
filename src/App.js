@@ -1,8 +1,11 @@
+import * as React from 'react';
+
+// Components
+import Menu from './components/Menu/index'
+
 function App() {
   return (
-    <div className="App">
-      <h2>Agora está funcionando na dev</h2>
-    </div>
+    <Menu />
   );
 }
 
