@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom';
 
 // Components
-import MenuBar from './components/MenuBar'
+// import MenuBar from './components/MenuBar'
 
 // Pages
 import Home from './pages/home'
