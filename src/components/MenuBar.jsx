@@ -1,15 +1,31 @@
-import React from "react";
-import styled from "styled-components";
-
-const Container = styled.div`
-    width: 100%;
-    height: 45px;
-    background-color: red;
-`
+import * as React from 'react';
+import { Link } from 'react-router-dom';
+import Container from '@mui/material/Container';
+import Grid from '@mui/material/Grid';
 
 const MenuBar = () => {
+
     return (
-        <Container></Container>
+        <Container maxWidth="sm">
+            <Grid
+                height="100px"
+                container
+                direction="row"
+                justifyContent="center"
+                alignItems="center"
+                spacing={3}
+            >
+                <Grid item xs={2}>
+                    <Link to="/" >Home</Link>
+                </Grid>
+                <Grid item xs={2}>
+                    <Link to="/courses" >Courses</Link>
+                </Grid>
+                <Grid item xs={2}>
+                    <Link to="/login" >Login</Link>
+                </Grid>
+            </Grid>
+        </Container>
     )
 }
 
